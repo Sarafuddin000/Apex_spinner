@@ -1,5 +1,6 @@
 Loading Clock Spinner in Oracle Apex
-![screen-capture](https://github.com/Sarafuddin000/Apex_spinner/assets/39001823/ca749650-91e9-4e88-8dae-c3793d8280b1)
+
+![screen-capture (2) (1)](https://github.com/Sarafuddin000/Apex_spinner/assets/39001823/eb651945-27bd-42b5-b639-0fb8ecd7deed)
 
 
 1st upload style.css into Application Shared Component. This Stylesheet contains spinner styles, You can always change in your way.
