@@ -1,0 +1,39 @@
+1. Get the style.css file and upload in application shared component. 
+
+
+
+2. Create a region under Header on Global Page 0.
+  Identification: 
+    Title: SPINNER
+    Type: Static Content
+  Source:
+    Text: 
+        <link rel="stylesheet" type="text/css" href="#APP_IMAGES#style.css">
+        <div id="spinner-container" class="la-timer la-3x" style="color: #fd7e14; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:902; display: none;">
+            <div></div>
+        </div>
+  Appearance:
+    Template: Blank With Attributes
+
+
+
+3. Create a dynamic Action 
+   Identification: 
+    Name: SPINNER
+  When:
+    Event: Page Load
+  Advanced:
+    Event Scope: Static
+True Action:-
+  Action: Execute JavaScript Code
+  Code: // Attach event handlers for various page loading, save, and submit events
+        apex.jQuery(document).on("apexbeforepagesubmit apexbeforerefresh", function() {
+            // Actions to execute before page items save, submission, or refresh
+            $('#spinner-container').show(); 
+        });
+        
+        apex.jQuery(document).on("apexpagesubmit apexafterrefresh", function() {
+            // Actions to execute after page items save, submission, or refresh
+            $('#spinner-container').hide();
+        });
+    Fire On Initialization: On
