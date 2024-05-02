@@ -3,6 +3,8 @@ Loading Clock Spinner in Oracle Apex
 
 
 1st upload style.css into Application Shared Component. This Stylesheet contains spinner styles, You can always change in your way.
+
 2nd create spinner region in global page.
+
 3rd create a dynamic action to show / hide your spinner, in my case i'm using page load and after refresh
 Now enjoy your loading screen.
